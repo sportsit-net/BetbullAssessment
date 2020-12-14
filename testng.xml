@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="com.sportsit.ExtentReportNG.ExtentReporterNG" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="Demo Test">
+        <classes>
+            <class name="com.sportsit.testdata.Apphomescreentest">
+            </class>
+            <class name="com.sportsit.testdata.AppswipeTest">
+            </class>
+            <class name="com.sportsit.testdata.SelectioncountryTest">
+            </class>
+            <class name="com.sportsit.testdata.Languageselectiontest">
+            </class>
+
+            <class name="com.sportsit.testdata.TestScrolltofeelgoodsection">
+            </class>
+            <class name="com.sportsit.testdata.Registertest">
+            </class>
+            <class name="com.sportsit.testdata.Menutest">
+            </class>
+
+
+
+        </classes>
+    </test>
+</suite>
