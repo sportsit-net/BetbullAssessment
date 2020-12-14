@@ -12,7 +12,7 @@ class ScoreCard extends Component {
         return (
             <div className="SM-play">
                 <div className="SM-section SM-play-section">
-                    <table id="user-table" data-scoretable='component-records'>
+                    <table id="user-table">
                         <thead>
                             <tr>
                                 <th>User Id</th>
@@ -20,7 +20,7 @@ class ScoreCard extends Component {
                                 <th>Score</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody data-scoretable='component-records'>
                             {this.props.scores && this.props.scores.map(user =>
                                 <tr key={user.userId}>
                                     <td>{user.userId}</td>
