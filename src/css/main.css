@@ -1,0 +1,716 @@
+body{
+    background:#1F80D5;
+    font-family:Montserrat,sans-serif;
+    font-size:14px;
+    color:#FFF;
+    font-weight:400;
+    letter-spacing:0.20px;
+    line-height:1.5;
+    margin:0;
+    user-select:none;
+    height:100%
+}
+*,*::before,*::after{
+    box-sizing:border-box
+}
+a{
+    color:inherit;
+    text-decoration:none
+}
+a:hover{
+    color:inherit
+}
+img{
+    vertical-align:middle;
+    border-style:none;
+    max-width:100%
+}
+h1{
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+}
+input,textarea{
+    font-family:inherit;
+    outline:none
+}
+.user-details{
+    font-size: 16px; 
+    font-weight: 600;
+    margin: 0 10px 20px;
+}
+.user-details-span{
+    padding: 0 10px;
+    color: #1F80D5;
+}
+/* Button */
+.button{
+    margin: 0 auto;
+    width: 100px;
+    padding: 10px 0;
+}
+.button-group{
+    margin:  0 auto;
+    width: 340px;
+    text-align: center;
+    padding: 20px 0;
+}
+.btn{
+    cursor:pointer;
+    font-family:Montserrat, Arial;
+    white-space:nowrap;
+    font-weight:500;
+}
+.SM-btnPrimary{
+    background-color:#ccc;
+    color:#FFF;
+    border-radius: 4px;
+    margin: 0 auto;
+    height: 40px;
+    border: solid 1px #ccc;
+    font-size: 18px;
+}
+.active{
+    background-color:#1163AB;
+    color:#FFF;
+    border-radius: 4px;
+    margin: 0 auto;
+    height: 40px;
+    border: solid 1px #1F80D5;
+    font-size: 18px;
+}
+.btn:focus{
+    outline:none;
+    box-shadow:none
+}
+.SM-btnPrimary:hover{
+    color:#FFF
+}
+
+/* End of Button */
+
+.w-100{
+    width: 100px;
+}
+.w-150{
+    width: 150px;
+}
+/* from group */
+.SM-formControl-group{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.SM-formLabel{
+    font-size:14px;
+    margin-bottom:5px
+}
+.SM-formControl input{
+    background-color:#FFF;
+    border-radius:4px;
+    border:1px solid #FFF;
+    padding:6px 12px;
+    height:42px;
+    width:100%;
+    font-size:16px;
+    color:#000
+}
+.SM-select{
+    border:1px solid #444
+}
+.SM-select select{
+    width:100%;
+    padding:0 10px;
+    border:0;
+    font-size:16px;
+    height:32px
+}
+.SM-select select:focus{
+    outline:none
+}
+/*Enf of from group */
+
+.container-fluid{
+    width:90%
+}
+@media (max-width: 767.98px){
+    .container-fluid{
+        width:100%
+    }
+}
+@media (max-width: 1366px){
+    .container-fluid{
+        width:100%
+    }
+}
+.navbar{
+    transition:all 0.3s;
+    height:70px;
+    background-color:#1F80D5;
+    border-bottom: solid 1px #ccc;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 10px;
+}
+.logout{
+    text-align: right;
+    float: right;
+    padding: 12px 10px 5px 5px;
+    font-size: 16px;
+}
+@media (max-width: 767.98px){
+    .navbar .container{
+        padding-right:15px;
+        padding-left:15px
+    }
+}
+.navbar .navbar-brand{
+    margin-right:0;
+    color:#FFF;
+    padding-left: 10px;
+}
+.navbar .navbar-brand img{
+    height:40px
+}
+.navbar .SM-logout:hover{
+    color:#FFF
+}
+.logo{
+    float: left;
+}
+h3{
+    font-size:26px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.SM-home-bgImage{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-image:url("../static/images/home-bg.jpg")
+}
+.SM-section{
+    padding:30px 0;
+}
+.SM-section-highlight{
+    background-color:#000 !important;
+    color:#FFF !important
+}
+.SM-txtPrimary{
+    color:#1F80D5
+}
+.SM-txt-white{
+    color:#FFF !important
+}
+
+
+/* Card Section */
+
+.SM-play-section{
+    padding-left:10px;
+    padding-right:10px
+}
+.SM-deck{
+    justify-content:center;
+    text-align:left
+}
+
+.SM-card{
+    display:inline-flex;
+    width:85px;
+}
+.SM-card>input,.SM-card>.SM-front,.SM-card>.SM-back{
+    width:83px;
+    height:126px;
+    position:relative
+}
+.SM-card>input{
+    z-index:999;
+    cursor:pointer;
+    opacity:0
+}
+.SM-card>.SM-front,.SM-card>.SM-back{
+    margin-left:-84px;
+    display:inline-block;
+    text-align:center;
+    vertical-align:top;
+    border-radius:8px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+.SM-card>.SM-front{
+    background:#f8fff9;
+    text-decoration:none;
+    font-size:16px
+}
+.SM-card>.SM-front::before,.SM-card>.SM-front::after{
+    position:absolute;
+    display:block;
+    font-family:Marvel, "Trebuchet MS", Helvetica, sans-serif
+}
+.SM-card>.SM-front::before{
+    top:10px;
+    left:2px;
+    width:20px;
+    font-size:1.38em;
+    line-height:1em
+}
+.SM-card>.SM-front::after{
+    bottom:14px;
+    right:7px;
+    width:63%;
+    height:70%;
+    padding-top:5%;
+    white-space:pre;
+    border:1px solid;
+    border-radius:4px;
+    overflow:hidden;
+    box-sizing:border-box
+}
+.SM-card>[class*=h],.SM-card>[class*=d]{
+    color:#f21;
+    border-color:#f21
+}
+.SM-card>[class*=c],.SM-card>[class*=s]{
+    color:#123;
+    border-color:#123
+}
+.SM-card>[class$=A]::after{
+    font-size:4em;
+    line-height:1.2em
+}
+.SM-card>[class$='2']::after,.SM-card>[class$='3']::after,.SM-card>[class$='4']::after,.SM-card>[class$='5']::after,.SM-card>[class$='6']::after,.SM-card>[class$='7']::after{
+    font-size:1.5em;
+    line-height:.6em
+}
+.SM-card>[class$='8']::after,.SM-card>[class$='9']::after,.SM-card>[class$='0']::after{
+    font-size:1.5em;
+    line-height:.2em
+}
+.SM-card>[class$=J]::after,.SM-card>[class$=Q]::after,.SM-card>[class$=K]::after{
+    font-size:3em;
+    line-height:.8em
+}
+.SM-card>.hA::before{
+    content:'A \2665'
+}
+.SM-card>.hA::after{
+    content:'\2665'
+}
+.SM-card>.h2::before{
+    content:'2 \2665'
+}
+.SM-card>.h2::after{
+    content:'\2665\a\a\a\a\2665'
+}
+.SM-card>.h3::before{
+    content:'3 \2665'
+}
+.SM-card>.h3::after{
+    content:'\2665\a\a\2665\a\a\2665'
+}
+.SM-card>.h4::before{
+    content:'4 \2665'
+}
+.SM-card>.h4::after{
+    content:'\2665 \2665\a\a\a\a\2665 \2665'
+}
+.SM-card>.h5::before{
+    content:'5 \2665'
+}
+.SM-card>.h5::after{
+    content:'\2665 \2665\a\a\2665\a\a\2665 \2665'
+}
+.SM-card>.h6::before{
+    content:'6 \2665'
+}
+.SM-card>.h6::after{
+    content:'\2665 \2665\a\a\2665 \2665\a\a\2665 \2665'
+}
+.SM-card>.h7::before{
+    content:'7 \2665'
+}
+.SM-card>.h7::after{
+    content:'\2665 \2665\a\2665\a\2665 \2665\a\a\2665 \2665'
+}
+.SM-card>.h8::before{
+    content:'8 \2665'
+}
+.SM-card>.h8::after{
+    content:'\a\2665 \2665\a\a\a\a\2665 \2665\a\a\a\a\2665 \2665\a\a\a\a\2665 \2665'
+}
+.SM-card>.h9::before{
+    content:'9 \2665'
+}
+.SM-card>.h9::after{
+    content:'\a\2665 \2665\a\a\2665\a\a\2665 \2665\a\a\a\a\2665 \2665\a\a\a\a\2665 \2665'
+}
+.SM-card>.h10::before{
+    content:'10 \2665'
+}
+.SM-card>.h10::after{
+    content:'\a\2665 \2665\a\a\2665\a\a\2665 \2665\a\a\a\a\2665 \2665\a\a\2665\a\a\2665 \2665'
+}
+.SM-card>.hJ::before{
+    content:'J \2665'
+}
+.SM-card>.hJ::after{
+    content:'J\a\2665'
+}
+.SM-card>.hQ::before{
+    content:'Q \2665'
+}
+.SM-card>.hQ::after{
+    content:'Q\a\2665'
+}
+.SM-card>.hK::before{
+    content:'K \2665'
+}
+.SM-card>.hK::after{
+    content:'K\a\2665'
+}
+.SM-card>.cA::before{
+    content:'A \2663'
+}
+.SM-card>.cA::after{
+    content:'\2663'
+}
+.SM-card>.c2::before{
+    content:'2 \2663'
+}
+.SM-card>.c2::after{
+    content:'\2663\a\a\a\a\2663'
+}
+.SM-card>.c3::before{
+    content:'3 \2663'
+}
+.SM-card>.c3::after{
+    content:'\2663\a\a\2663\a\a\2663'
+}
+.SM-card>.c4::before{
+    content:'4 \2663'
+}
+.SM-card>.c4::after{
+    content:'\2663 \2663\a\a\a\a\2663 \2663'
+}
+.SM-card>.c5::before{
+    content:'5 \2663'
+}
+.SM-card>.c5::after{
+    content:'\2663 \2663\a\a\2663\a\a\2663 \2663'
+}
+.SM-card>.c6::before{
+    content:'6 \2663'
+}
+.SM-card>.c6::after{
+    content:'\2663 \2663\a\a\2663 \2663\a\a\2663 \2663'
+}
+.SM-card>.c7::before{
+    content:'7 \2663'
+}
+.SM-card>.c7::after{
+    content:'\2663 \2663\a\2663\a\2663 \2663\a\a\2663 \2663'
+}
+.SM-card>.c8::before{
+    content:'8 \2663'
+}
+.SM-card>.c8::after{
+    content:'\a\2663 \2663\a\a\a\a\2663 \2663\a\a\a\a\2663 \2663\a\a\a\a\2663 \2663'
+}
+.SM-card>.c9::before{
+    content:'9 \2663'
+}
+.SM-card>.c9::after{
+    content:'\a\2663 \2663\a\a\2663\a\a\2663 \2663\a\a\a\a\2663 \2663\a\a\a\a\2663 \2663'
+}
+.SM-card>.c10::before{
+    content:'10 \2663'
+}
+.SM-card>.c10::after{
+    content:'\a\2663 \2663\a\a\2663\a\a\2663 \2663\a\a\a\a\2663 \2663\a\a\2663\a\a\2663 \2663'
+}
+.SM-card>.cJ::before{
+    content:'J \2663'
+}
+.SM-card>.cJ::after{
+    content:'J\a\2663'
+}
+.SM-card>.cQ::before{
+    content:'Q \2663'
+}
+.SM-card>.cQ::after{
+    content:'Q\a\2663'
+}
+.SM-card>.cK::before{
+    content:'K \2663'
+}
+.SM-card>.cK::after{
+    content:'K\a\2663'
+}
+.SM-card>.dA::before{
+    content:'A \2666'
+}
+.SM-card>.dA::after{
+    content:'\2666'
+}
+.SM-card>.d2::before{
+    content:'2 \2666'
+}
+.SM-card>.d2::after{
+    content:'\2666\a\a\a\a\2666'
+}
+.SM-card>.d3::before{
+    content:'3 \2666'
+}
+.SM-card>.d3::after{
+    content:'\2666\a\a\2666\a\a\2666'
+}
+.SM-card>.d4::before{
+    content:'4 \2666'
+}
+.SM-card>.d4::after{
+    content:'\2666 \2666\a\a\a\a\2666 \2666'
+}
+.SM-card>.d5::before{
+    content:'5 \2666'
+}
+.SM-card>.d5::after{
+    content:'\2666 \2666\a\a\2666\a\a\2666 \2666'
+}
+.SM-card>.d6::before{
+    content:'6 \2666'
+}
+.SM-card>.d6::after{
+    content:'\2666 \2666\a\a\2666 \2666\a\a\2666 \2666'
+}
+.SM-card>.d7::before{
+    content:'7 \2666'
+}
+.SM-card>.d7::after{
+    content:'\2666 \2666\a\2666\a\2666 \2666\a\a\2666 \2666'
+}
+.SM-card>.d8::before{
+    content:'8 \2666'
+}
+.SM-card>.d8::after{
+    content:'\a\2666 \2666\a\a\a\a\2666 \2666\a\a\a\a\2666 \2666\a\a\a\a\2666 \2666'
+}
+.SM-card>.d9::before{
+    content:'9 \2666'
+}
+.SM-card>.d9::after{
+    content:'\a\2666 \2666\a\a\2666\a\a\2666 \2666\a\a\a\a\2666 \2666\a\a\a\a\2666 \2666'
+}
+.SM-card>.d10::before{
+    content:'10 \2666'
+}
+.SM-card>.d10::after{
+    content:'\a\2666 \2666\a\a\2666\a\a\2666 \2666\a\a\a\a\2666 \2666\a\a\2666\a\a\2666 \2666'
+}
+.SM-card>.dJ::before{
+    content:'J \2666'
+}
+.SM-card>.dJ::after{
+    content:'J\a\2666'
+}
+.SM-card>.dQ::before{
+    content:'Q \2666'
+}
+.SM-card>.dQ::after{
+    content:'Q\a\2666'
+}
+.SM-card>.dK::before{
+    content:'K \2666'
+}
+.SM-card>.dK::after{
+    content:'K\a\2666'
+}
+.SM-card>.sA::before{
+    content:'A \2660'
+}
+.SM-card>.sA::after{
+    content:'\2660'
+}
+.SM-card>.s2::before{
+    content:'2 \2660'
+}
+.SM-card>.s2::after{
+    content:'\2660\a\a\a\a\2660'
+}
+.SM-card>.s3::before{
+    content:'3 \2660'
+}
+.SM-card>.s3::after{
+    content:'\2660\a\a\2660\a\a\2660'
+}
+.SM-card>.s4::before{
+    content:'4 \2660'
+}
+.SM-card>.s4::after{
+    content:'\2660 \2660\a\a\a\a\2660 \2660'
+}
+.SM-card>.s5::before{
+    content:'5 \2660'
+}
+.SM-card>.s5::after{
+    content:'\2660 \2660\a\a\2660\a\a\2660 \2660'
+}
+.SM-card>.s6::before{
+    content:'6 \2660'
+}
+.SM-card>.s6::after{
+    content:'\2660 \2660\a\a\2660 \2660\a\a\2660 \2660'
+}
+.SM-card>.s7::before{
+    content:'7 \2660'
+}
+.SM-card>.s7::after{
+    content:'\2660 \2660\a\2660\a\2660 \2660\a\a\2660 \2660'
+}
+.SM-card>.s8::before{
+    content:'8 \2660'
+}
+.SM-card>.s8::after{
+    content:'\a\2660 \2660\a\a\a\a\2660 \2660\a\a\a\a\2660 \2660\a\a\a\a\2660 \2660'
+}
+.SM-card>.s9::before{
+    content:'9 \2660'
+}
+.SM-card>.s9::after{
+    content:'\a\2660 \2660\a\a\2660\a\a\2660 \2660\a\a\a\a\2660 \2660\a\a\a\a\2660 \2660'
+}
+.SM-card>.s10::before{
+    content:'10 \2660'
+}
+.SM-card>.s10::after{
+    content:'\a\2660 \2660\a\a\2660\a\a\2660 \2660\a\a\a\a\2660 \2660\a\a\2660\a\a\2660 \2660'
+}
+.SM-card>.sJ::before{
+    content:'J \2660'
+}
+.SM-card>.sJ::after{
+    content:'J\a\2660'
+}
+.SM-card>.sQ::before{
+    content:'Q \2660'
+}
+.SM-card>.sQ::after{
+    content:'Q\a\2660'
+}
+.SM-card>.sK::before{
+    content:'K \2660'
+}
+.SM-card>.sK::after{
+    content:'K\a\2660'
+}
+.SM-card>.SM-back{
+    background:#000000;
+    background:linear-gradient(#000, #222);
+    border:5px solid #f8fff9;
+    box-sizing:border-box
+}
+.SM-card>.SM-back::before,.SM-card>.SM-back::after{
+    content:'';
+    display:block;
+    position:absolute;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    background:url("https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Small.png") center/36px;
+    border-radius:inherit;
+    opacity:.3
+}
+.SM-card>.SM-back::after{
+    background-position:calc(50% + 18px) calc(50% + 18px)
+}
+.SM-card>.SM-front,.SM-card>.SM-back{
+    transition:all .8s;
+    backface-visibility:hidden;
+    transform-style:preserve-3d;
+    z-index:0
+}
+.SM-card>input:checked+.SM-front,.SM-card>input:checked+.SM-front+.SM-back{
+    z-index:100
+}
+.SM-card>input:focus+.SM-front,.SM-card>input:focus+.SM-front+.SM-back{
+    transition-property:transform, filter, box-shadow;
+    outline:0;
+    z-index:900
+}
+.SM-card>.SM-front{
+    transform:translateX(160%) rotateY(-180deg);
+    transform-origin:-30% center;
+    box-shadow:130px 30px 40px -20px transparent;
+    filter:brightness(3)
+}
+.SM-card>input:checked+.SM-front{
+    transform:translateX(0%) rotateY(0deg);
+    box-shadow:1px 1px 2px rgba(0,0,0,0.4);
+    filter:brightness(1)
+}
+.SM-card>.SM-back{
+    transform:translateX(0%) rotateY(0deg);
+    transform-origin:130% center;
+    box-shadow:1px 1px 2px rgba(0,0,0,0.4);
+    filter:brightness(1)
+}
+.SM-card>input:checked+.SM-front+.SM-back{
+    transform:translateX(-160%) rotateY(180deg);
+    box-shadow:80px 10px 20px -40px transparent;
+    filter:brightness(0)
+}
+@supports (-ms-ime-align: auto){
+    .SM-card>input{
+        animation:step-end .8s
+    }
+    .SM-card>.SM-front,.SM-card>.SM-back{
+        cursor:pointer
+    }
+    .SM-card>input:checked{
+        animation-name:noclick1
+    }
+    .SM-card>input:not(:checked){
+        animation-name:noclick2
+    }
+    @keyframes noclick1{
+        0%{
+            visibility:hidden
+        }
+        100%{
+            visibility:visible
+        }
+    }
+    @keyframes noclick2{
+        0%{
+            visibility:hidden
+        }
+        100%{
+            visibility:visible
+        }
+    }
+}
+/* table css */
+#user-table {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #305977;
+  }
+  
+  #user-table td, #user-table th {
+    border: 1px solid #aaa;
+    padding: 8px;
+  }
+  
+  #user-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1F80D5;
+    color: #fff;
+  }
+ 
