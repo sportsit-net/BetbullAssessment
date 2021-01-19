@@ -1,0 +1,422 @@
+.SMG-txtPrimary{
+    color: $SMG-primaryColor;
+}
+.SMG-txtGrey{
+    color: #919191;
+}
+.SMG-txt-white{
+    color: #FFF !important;
+}
+.caret{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.SMG-play-section{
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.SMG-deck {
+    // perspective: 1500px;
+    justify-content: center;
+    text-align: center;
+}
+
+.SMG-cardsRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+   
+  .SMG-card {
+    // perspective: 1500px;
+    display: inline-flex;
+    padding: 2px;
+  }
+  .SMG-heading{
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+  .SMG-buttonRow{
+    margin-top: 30px;
+  }
+  /* --- CARD SETTINGS --- */
+  
+  .SMG-card>input,
+  .SMG-card>.SMG-front,
+  .SMG-card>.SMG-back {
+    width: 85px;
+    height: 120px;
+    position: relative;
+  }
+  
+  .SMG-card>input {
+    // margin: 0 5px 10px;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .SMG-card>.SMG-front,
+  .SMG-card>.SMG-back {
+    //left: -5px; /* Subtract margin value */
+    margin-left: -84px; /* Subtract width value */
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* --- FRONT CONTENT --- */
+  
+  .SMG-card>.SMG-front{
+    background: #f8fff9;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .SMG-card>.SMG-front::before,
+  .SMG-card>.SMG-front::after {
+    position: absolute;
+    display: block;
+    font-family: Marvel, "Trebuchet MS", Helvetica, sans-serif;
+  }
+  
+  .SMG-card>.SMG-front::before {
+    top: 10px;
+    left: 2px;
+    width: 20px;
+    font-size: 1.38em;
+    line-height: 1em;
+  }
+  
+  .SMG-card>.SMG-front::after {
+    bottom: 14px;
+    right: 7px;
+    width: 63%;
+    height: 70%;
+    padding-top: 5%;
+    white-space: pre;
+    border: 1px solid;
+    border-radius: 4px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* --- COMMON RULES FOR CARD SUIT --- */
+  
+  .SMG-card>[class*=h],
+  .SMG-card>[class*=d]{
+    color: #f21;
+    border-color: #f21;
+  }
+  .SMG-card>[class*=c],
+  .SMG-card>[class*=s]{
+    color:#123;
+    border-color: #123;
+  }
+  
+  /* --- COMMON RULES FOR CARD VALUE --- */
+  
+  .SMG-card>[class$=A]::after{font-size:4em;line-height:1.2em}
+  .SMG-card>[class$='2']::after,
+  .SMG-card>[class$='3']::after,
+  .SMG-card>[class$='4']::after,
+  .SMG-card>[class$='5']::after,
+  .SMG-card>[class$='6']::after,
+  .SMG-card>[class$='7']::after{font-size: 1.5em;line-height:.6em}
+  .SMG-card>[class$='8']::after,
+  .SMG-card>[class$='9']::after,
+  .SMG-card>[class$='0']::after{font-size: 1.5em;line-height:.2em}
+  .SMG-card>[class$=J]::after,
+  .SMG-card>[class$=Q]::after,
+  .SMG-card>[class$=K]::after{font-size:3em;line-height:.8em}
+  
+  /* Hearts */
+  
+  .SMG-card>.hA::before{content:'A \2665'}
+  .SMG-card>.hA::after{content:'\2665';}
+  .SMG-card>.h2::before{content:'2 \2665'}
+  .SMG-card>.h2::after{content:'\2665\a\a\a\a\2665'}
+  .SMG-card>.h3::before{content:'3 \2665'}
+  .SMG-card>.h3::after{content:'\2665\a\a\2665\a\a\2665'}
+  .SMG-card>.h4::before{content:'4 \2665'}
+  .SMG-card>.h4::after{content:'\2665    \2665\a\a\a\a\2665    \2665'}
+  .SMG-card>.h5::before{content:'5 \2665'}
+  .SMG-card>.h5::after{content:'\2665    \2665\a\a\2665\a\a\2665    \2665'}
+  .SMG-card>.h6::before{content:'6 \2665'}
+  .SMG-card>.h6::after{content:'\2665    \2665\a\a\2665    \2665\a\a\2665    \2665'}
+  .SMG-card>.h7::before{content:'7 \2665'}
+  .SMG-card>.h7::after{content:'\2665    \2665\a\2665\a\2665    \2665\a\a\2665    \2665'}
+  .SMG-card>.h8::before{content:'8 \2665'}
+  .SMG-card>.h8::after{content:'\a\2665    \2665\a\a\a\a\2665    \2665\a\a\a\a\2665    \2665\a\a\a\a\2665    \2665'}
+  .SMG-card>.h9::before{content:'9 \2665'}
+  .SMG-card>.h9::after{content:'\a\2665    \2665\a\a\2665\a\a\2665    \2665\a\a\a\a\2665    \2665\a\a\a\a\2665    \2665'}
+  .SMG-card>.h10::before{content:'10 \2665'}
+  .SMG-card>.h10::after{content:'\a\2665    \2665\a\a\2665\a\a\2665    \2665\a\a\a\a\2665    \2665\a\a\2665\a\a\2665    \2665'}
+  .SMG-card>.hJ::before{content:'J \2665'}
+  .SMG-card>.hJ::after{content:'J\a\2665'}
+  .SMG-card>.hQ::before{content:'Q \2665'}
+  .SMG-card>.hQ::after{content:'Q\a\2665'}
+  .SMG-card>.hK::before{content:'K \2665'}
+  .SMG-card>.hK::after{content:'K\a\2665'}
+  
+  /* Clubs */
+  
+  .SMG-card>.cA::before{content:'A \2663'}
+  .SMG-card>.cA::after{content:'\2663'}
+  .SMG-card>.c2::before{content:'2 \2663'}
+  .SMG-card>.c2::after{content:'\2663\a\a\a\a\2663'}
+  .SMG-card>.c3::before{content:'3 \2663'}
+  .SMG-card>.c3::after{content:'\2663\a\a\2663\a\a\2663'}
+  .SMG-card>.c4::before{content:'4 \2663'}
+  .SMG-card>.c4::after{content:'\2663    \2663\a\a\a\a\2663    \2663'}
+  .SMG-card>.c5::before{content:'5 \2663'}
+  .SMG-card>.c5::after{content:'\2663    \2663\a\a\2663\a\a\2663    \2663'}
+  .SMG-card>.c6::before{content:'6 \2663'}
+  .SMG-card>.c6::after{content:'\2663    \2663\a\a\2663    \2663\a\a\2663    \2663'}
+  .SMG-card>.c7::before{content:'7 \2663'}
+  .SMG-card>.c7::after{content:'\2663    \2663\a\2663\a\2663    \2663\a\a\2663    \2663'}
+  .SMG-card>.c8::before{content:'8 \2663'}
+  .SMG-card>.c8::after{content:'\a\2663    \2663\a\a\a\a\2663    \2663\a\a\a\a\2663    \2663\a\a\a\a\2663    \2663'}
+  .SMG-card>.c9::before{content:'9 \2663'}
+  .SMG-card>.c9::after{content:'\a\2663    \2663\a\a\2663\a\a\2663    \2663\a\a\a\a\2663    \2663\a\a\a\a\2663    \2663'}
+  .SMG-card>.c10::before{content:'10 \2663'}
+  .SMG-card>.c10::after{content:'\a\2663    \2663\a\a\2663\a\a\2663    \2663\a\a\a\a\2663    \2663\a\a\2663\a\a\2663    \2663'}
+  .SMG-card>.cJ::before{content:'J \2663'}
+  .SMG-card>.cJ::after{content:'J\a\2663'}
+  .SMG-card>.cQ::before{content:'Q \2663'}
+  .SMG-card>.cQ::after{content:'Q\a\2663'}
+  .SMG-card>.cK::before{content:'K \2663'}
+  .SMG-card>.cK::after{content:'K\a\2663'}
+  
+  /* Diamonds */
+  
+  .SMG-card>.dA::before{content:'A \2666'}
+  .SMG-card>.dA::after{content:'\2666'}
+  .SMG-card>.d2::before{content:'2 \2666'}
+  .SMG-card>.d2::after{content:'\2666\a\a\a\a\2666'}
+  .SMG-card>.d3::before{content:'3 \2666'}
+  .SMG-card>.d3::after{content:'\2666\a\a\2666\a\a\2666'}
+  .SMG-card>.d4::before{content:'4 \2666'}
+  .SMG-card>.d4::after{content:'\2666    \2666\a\a\a\a\2666    \2666'}
+  .SMG-card>.d5::before{content:'5 \2666'}
+  .SMG-card>.d5::after{content:'\2666    \2666\a\a\2666\a\a\2666    \2666'}
+  .SMG-card>.d6::before{content:'6 \2666'}
+  .SMG-card>.d6::after{content:'\2666    \2666\a\a\2666    \2666\a\a\2666    \2666'}
+  .SMG-card>.d7::before{content:'7 \2666'}
+  .SMG-card>.d7::after{content:'\2666    \2666\a\2666\a\2666    \2666\a\a\2666    \2666'}
+  .SMG-card>.d8::before{content:'8 \2666'}
+  .SMG-card>.d8::after{content:'\a\2666    \2666\a\a\a\a\2666    \2666\a\a\a\a\2666    \2666\a\a\a\a\2666    \2666'}
+  .SMG-card>.d9::before{content:'9 \2666'}
+  .SMG-card>.d9::after{content:'\a\2666    \2666\a\a\2666\a\a\2666    \2666\a\a\a\a\2666    \2666\a\a\a\a\2666    \2666'}
+  .SMG-card>.d10::before{content:'10 \2666'}
+  .SMG-card>.d10::after{content:'\a\2666    \2666\a\a\2666\a\a\2666    \2666\a\a\a\a\2666    \2666\a\a\2666\a\a\2666    \2666'}
+  .SMG-card>.dJ::before{content:'J \2666'}
+  .SMG-card>.dJ::after{content:'J\a\2666'}
+  .SMG-card>.dQ::before{content:'Q \2666'}
+  .SMG-card>.dQ::after{content:'Q\a\2666'}
+  .SMG-card>.dK::before{content:'K \2666'}
+  .SMG-card>.dK::after{content:'K\a\2666'}
+  
+  /* Spades */
+  
+  .SMG-card>.sA::before{content:'A \2660'}
+  .SMG-card>.sA::after{content:'\2660'}
+  .SMG-card>.s2::before{content:'2 \2660'}
+  .SMG-card>.s2::after{content:'\2660\a\a\a\a\2660'}
+  .SMG-card>.s3::before{content:'3 \2660'}
+  .SMG-card>.s3::after{content:'\2660\a\a\2660\a\a\2660'}
+  .SMG-card>.s4::before{content:'4 \2660'}
+  .SMG-card>.s4::after{content:'\2660    \2660\a\a\a\a\2660    \2660'}
+  .SMG-card>.s5::before{content:'5 \2660'}
+  .SMG-card>.s5::after{content:'\2660    \2660\a\a\2660\a\a\2660    \2660'}
+  .SMG-card>.s6::before{content:'6 \2660'}
+  .SMG-card>.s6::after{content:'\2660    \2660\a\a\2660    \2660\a\a\2660    \2660'}
+  .SMG-card>.s7::before{content:'7 \2660'}
+  .SMG-card>.s7::after{content:'\2660    \2660\a\2660\a\2660    \2660\a\a\2660    \2660'}
+  .SMG-card>.s8::before{content:'8 \2660'}
+  .SMG-card>.s8::after{content:'\a\2660    \2660\a\a\a\a\2660    \2660\a\a\a\a\2660    \2660\a\a\a\a\2660    \2660'}
+  .SMG-card>.s9::before{content:'9 \2660'}
+  .SMG-card>.s9::after{content:'\a\2660    \2660\a\a\2660\a\a\2660    \2660\a\a\a\a\2660    \2660\a\a\a\a\2660    \2660'}
+  .SMG-card>.s10::before{content:'10 \2660'}
+  .SMG-card>.s10::after{content:'\a\2660    \2660\a\a\2660\a\a\2660    \2660\a\a\a\a\2660    \2660\a\a\2660\a\a\2660    \2660'}
+  .SMG-card>.sJ::before{content:'J \2660'}
+  .SMG-card>.sJ::after{content:'J\a\2660'}
+  .SMG-card>.sQ::before{content:'Q \2660'}
+  .SMG-card>.sQ::after{content:'Q\a\2660'}
+  .SMG-card>.sK::before{content:'K \2660'}
+  .SMG-card>.sK::after{content:'K\a\2660'}
+  
+  /* --- BACK CONTENT --- */
+  
+  .SMG-card>.SMG-back {
+    background-image: url('../../images/card-back.png');
+  }
+  
+  .SMG-card>.SMG-back::before,
+  .SMG-card>.SMG-back::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: url('https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-SMGall.png') center/36px;
+    border-radius: inherit;
+    opacity: .3;
+  }
+  
+  .SMG-card>.SMG-back::after {
+    background-position: calc(50% + 18px) calc(50% + 18px);
+  }
+  
+  /* --- ANIMATION AND 3D SETTINGS --- */
+  
+  
+  
+  .SMG-card>.SMG-front,
+  .SMG-card>.SMG-back {
+    transition: all .8s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    z-index: 0;
+  }
+  
+  .SMG-card>input:checked + .SMG-front,
+  .SMG-card>input:checked + .SMG-front + .SMG-back {
+    z-index: 100;
+  }
+  
+  .SMG-card>input:focus + .SMG-front,
+  .SMG-card>input:focus + .SMG-front + .SMG-back {
+    transition-property:  transform, filter, box-shadow; /* Exclude z-index to immediately overlay */
+    outline: 0;
+    z-index: 900;
+  }
+  
+  /* --- FRONT ANIMATION --- */
+  
+  .SMG-card>.SMG-front {
+    transform: translateX(160%) rotateY(-180deg);
+    transform-origin: -30% center;
+    box-shadow: 130px 30px 40px -20px rgba(0, 0, 0, 0);
+    filter: brightness(3);
+  }
+  
+  .SMG-card>input:checked + .SMG-front {
+    transform: translateX(0%) rotateY(0deg);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+    filter: brightness(1);
+  }
+  
+  /* --- BACK ANIMATION --- */
+  
+  .SMG-card>.SMG-back {
+    transform: translateX(0%) rotateY(0deg);
+    transform-origin: 130% center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+    filter: brightness(1);
+  }
+  
+  .SMG-card>input:checked + .SMG-front + .SMG-back {
+    transform: translateX(-160%) rotateY(180deg);
+    box-shadow: 80px 10px 20px -40px rgba(0, 0, 0, 0);
+    filter: brightness(0);
+  }
+  
+  /* Edge hack - Prevent click during transition, otherwise the animation breaks */
+  
+  @supports (-ms-ime-align:auto) {
+    .SMG-card>input {
+      animation: step-end .8s; // Time is the same as the main transition
+    }
+    .SMG-card>.SMG-front,
+    .SMG-card>.SMG-back {
+      cursor: pointer;
+    }
+  
+    .SMG-card>input:checked {
+      animation-name: noclick1;
+    }
+  
+    .SMG-card>input:not(:checked) {
+      animation-name: noclick2;
+    }
+  
+    @keyframes noclick1 {
+      0%   { visibility: hidden; }
+      100% { visibility: visible; }
+    }
+  
+    @keyframes noclick2 {
+      0%   { visibility: hidden; }
+      100% { visibility: visible; }
+    }
+  }
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  width: 90%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.modal-body{
+  padding: 20px;
+  height: 74vh;
+  overflow-y: auto;
+}
+.modal-header{
+  background-color: $SMG-primaryColor;
+  color: $white;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  .close {
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      border: 0;
+      background-color: transparent;
+  }
+}
+.modal-footer{
+  height: 50px;
+  button{
+    width: 100%;
+    height: 100%;
+  }
+}

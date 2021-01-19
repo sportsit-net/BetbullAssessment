@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserForm /> with no props should match the snapshot 1`] = `"<form class=\\"userForm SM-formControl-group mb-4  hello\\"><div class=\\"SM-formControl form-row\\"><label class=\\"SM-formLabel SM-txt-white form-label\\">Your Name</label><input type=\\"text\\" data-id=\\"userName\\" placeholder=\\"Enter Name\\" class=\\"SM-input form-control\\"/></div><button type=\\"submit\\" class=\\"btn SM-btnPrimary SM-btnMedium w-100 mt-4 b-0 playButton \\">Lets Play</button></form>"`;
+
+exports[`User Component Should render without errors 1`] = `"<form class=\\"userForm SM-formControl-group mb-4  hello\\"><div class=\\"SM-formControl form-row\\"><label class=\\"SM-formLabel SM-txt-white form-label\\">Your Name</label><input type=\\"text\\" data-id=\\"userName\\" placeholder=\\"Enter Name\\" class=\\"SM-input form-control\\"/></div><button type=\\"submit\\" class=\\"btn SM-btnPrimary SM-btnMedium w-100 mt-4 b-0 playButton \\">Lets Play</button></form>"`;

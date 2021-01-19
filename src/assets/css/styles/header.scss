@@ -1,0 +1,14 @@
+
+.SMG-header{
+    background-color: #b00020;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    .humburger{
+        position: absolute;
+        left: 20px;
+    }
+}

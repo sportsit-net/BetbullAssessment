@@ -1,0 +1,44 @@
+//====================================
+//Buttons
+//====================================
+.btn {
+    cursor: pointer;
+    white-space: nowrap;    
+    font-weight: 600;
+    height: 36px;
+    border: none;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+.SMG-btnXLarge{
+    height: 80px;
+    font-size: 26px;
+}
+.SMG-btnLarge{
+    height: 55px;
+    font-size: 20px;
+}
+.SMG-btnMedium{
+    height: 44px;
+    font-size: 15px;
+}
+.SMG-btnPrimary{
+    background-color: $SMG-primaryColor;
+    color: $white;
+}
+
+.SMG-btnSecondary{
+    background-color: $SMG-secondaryColor;
+    color: $white;
+}
+.SMG-btnPlay{
+    height: 42px;
+    border-radius: 20px;
+}
+.SMG-btnReset{
+    background-color: #e44e4e;
+    color: $white;
+}
+

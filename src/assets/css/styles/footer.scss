@@ -1,0 +1,31 @@
+.SMG-footerBtn{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    z-index: 1;
+    button{
+        height: 100%;
+        text-transform: uppercase;
+    }
+    &.btnInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #c6e9ff;
+    }
+    &.btnRow{
+        display: flex;
+        font-size: 14px;
+        button{
+            width: 100%;
+        }
+    }
+    .btnIcon{
+        display: inline-block;
+        padding-right: 10px;
+    }
+    
+}
